@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/e419cdd531.js" crossorigin="anonymous"></script>
+    <title>Astronom</title>
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="Assets/2_23_AM__BGM_DOVA-SYNDROME_OFFICIAL_YouTube_CHANNEL.mp3" type="audio/mpeg">
+    </audio>
+    <div class="nav-screen" id="home">
+        <nav>
+            <h2 class="logo">Astronom</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#solar">Solar System</a></li>
+                <li><a href="#facts">Facts</a></li>
+                <li><a href="#footer">Contact us</a></li>
+            </ul>
+            <i class="fa-solid fa-volume-high fa-xl" id="volumeMute" style="color: white;"></i>
+            <i class="fa-solid fa-volume-xmark fa-xl" id="volumeUnmute" style="display: none; color: white;"></i>
+        </nav>
+        <!-- BackGround Video -->
+        <div class="content">
+            <div class="container-video">
+                <video autoplay muted loop id="myVideo">
+                    <source src="./Assets/Night Sky Animation.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="content-text">
+                <h1>Learn More About Astronomy and Space</h1>
+                <h4>Our Solar System</h4>
+                <h4 id="lastword">Consists Of 8 Planets And a Star</h4>
+                <p id="lastword">
+                    <a href="#solar" class="learnbtn">Learn More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <section class="about" id="about">
+        <div class="main">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <h5>What is Astronom?</h5>
+                <p>Here in Astronom we bring you knowledge about our solar system. Astronom explains about what our solar system consists of and what is the core that holds it. Astronom also provides interesting facts about The Space.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="solar" id="solar">
+        <div class="title">
+            <h2>Solar System</h2>
+        </div>
+        <div class="star">
+            <div class="sun" id="planetSun">Sun
+                <img src="./Assets/sun.jpeg" alt="">
+            </div>
+        </div>
+        <div class="system">
+            <div class="planet first" id="planetMercury">Mercury
+                <img src="./Assets/mercury.jpeg" alt="">
+            </div>
+            <div class="planet" id="planetVenus">Venus
+                <img src="./Assets/venus.jpeg" alt="">
+            </div>
+            <div class="planet" id="planetEarth">Earth
+                <img src="./Assets/earth.jpeg" alt="">
+            </div>
+            <div class="planet" id="planetMars">Mars
+                <img src="./Assets/mars.jpeg" alt="">
+            </div>
+            <div class="planet" id="planetJupiter">Jupiter
+                <img src="./Assets/jupiter.jpeg" alt="">
+            </div>
+            <div class="planet" id="planetSaturn">Saturn
+                <img src="./Assets/saturn.jpeg" alt="">
+            </div>
+            <div class="planet" id="planetUranus">Uranus
+                <img src="./Assets/uranus.jpeg" alt="">
+            </div>
+            <div class="planet" id="planetNeptune">Neptune
+                <img src="./Assets/neptune.jpeg" alt="">
+            </div>
+        </div>
+        <div class="details"> 
+            <div class="details-container" id="contentSun">
+                <img src="./Assets/sun.jpeg" alt="">
+                <div class="details-content">
+                    <h3>The Sun</h3>
+                    <h4>The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as visible light, ultraviolet, and infrared radiation. It is the most important source of energy for life on Earth. The Sun's diameter is about 1.39 million kilometers (864,000 miles), or 109 times that of Earth. Its mass is about 330,000 times that of Earth, comprising about 99.86% of the total mass of the Solar System.[20] Roughly three-quarters of the Sun's mass consists of hydrogen (~73%); the rest is mostly helium (~25%), with much smaller quantities of heavier elements, including oxygen, carbon, neon, and iron.</h4>
+                </div>
+            </div>
+            <div class="details-container" id="contentMercury" style="display: none;">
+                <img src="./Assets/mercury.jpeg" alt="">
+                <div class="details-content">
+                    <h3>Mercury</h3>
+                    <h4>Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals, corresponding to the Greek god Hermes. Like Venus, Mercury orbits the Sun within Earth's orbit as an inferior planet, and its apparent distance from the Sun as viewed from Earth never exceeds 28°. This proximity to the Sun means the planet can only be seen near the western horizon after sunset or the eastern horizon before sunrise, usually in twilight. At this time, it may appear as a bright star-like object, but is more difficult to observe than Venus. From Earth, the planet telescopically displays the complete range of phases, similar to Venus and the Moon, which recurs over its synodic period of approximately 116 days.</h4>
+                </div>
+            </div>
+            <div class="details-container" id="contentVenus" style="display: none;">
+                <img src="./Assets/venus.jpeg" alt="">
+                <div class="details-content">
+                    <h3>Venus</h3>
+                    <h4>Venus is the second planet from the Sun and is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be visible to the naked eye in broad daylight. Venus's orbit is smaller than that of Earth, but its maximal elongation is 47°; thus, at latitudes with a day-night cycle, it is most readily visible for up to a few hours following the start of sunset or before sunrise. At times, it has been seen in a completely dark sky. Venus orbits the Sun every 224.7 Earth days. It has a synodic day length of 117 Earth days and a sidereal rotation period of 243 Earth days. Consequently, it takes longer to rotate about its axis than any other planet in the Solar System, and does so in the opposite direction to all but Uranus. This means that the Sun rises from its western horizon and sets in its east. Venus does not have any moons, a distinction it shares only with Mercury among the planets in the Solar System.</h4>
+                </div>
+            </div>
+            <div class="details-container" id="contentEarth" style="display: none;">
+                <img src="./Assets/earth.jpeg" alt="">
+                <div class="details-content">
+                    <h3>Earth</h3>
+                    <h4>Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water. About 71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes, and rivers. The remaining 29% of Earth's surface is land, consisting of continents and islands. Earth's surface layer is formed of several slowly moving tectonic plates, interacting to produce mountain ranges, volcanoes, and earthquakes. Earth's liquid outer core generates the magnetic field that shapes Earth's magnetosphere, deflecting destructive solar winds. Earth's atmosphere consists mostly of nitrogen and oxygen.</h4>
+                </div>
+            </div>
+            <div class="details-container" id="contentMars" style="display: none;">
+                <img src="./Assets/mars.jpeg" alt="">
+                <div class="details-content">
+                    <h3>Mars</h3>
+                    <h4>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war. Mars is a terrestrial planet with a thin atmosphere, and has a crust primarily composed of elements similar to Earth's crust, as well as a core made of iron and nickel. Mars has surface features such as impact craters, valleys, dunes, and polar ice caps. It also has two small and irregularly shaped moons, Phobos and Deimos. Some of the most notable surface features on Mars include features such as Olympus Mons, the largest volcano and highest known mountain on any Solar System planet, and Valles Marineris, one of the largest canyons in the Solar System.</h4>
+                </div>
+            </div>
+            <div class="details-container" id="contentJupiter" style="display: none;">
+                <img src="./Assets/jupiter.jpeg" alt="">
+                <div class="details-content">
+                    <h3>Jupiter</h3>
+                    <h4>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun. Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus, and it has been observed since prehistoric times. It was named after the Roman god Jupiter, the king of the gods. Jupiter is primarily composed of hydrogen, but helium constitutes one-quarter of its mass and one-tenth of its volume.</h4>
+                </div>
+            </div>
+            <div class="details-container" id="contentSaturn" style="display: none;">
+                <img src="./Assets/saturn.jpeg" alt="">
+                <div class="details-content">
+                    <h3>Saturn</h3>
+                    <h4>Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It has only one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive. Saturn's interior is most likely composed of a core of iron-nickel and rock (silicon and oxygen compounds). Its core is surrounded by a deep layer of metallic hydrogen, an intermediate layer of liquid hydrogen and liquid helium, and finally, a gaseous outer layer. Saturn has a pale yellow hue due to ammonia crystals in its upper atmosphere. An electrical current within the metallic hydrogen layer is thought to give rise to Saturn's planetary magnetic field, which is weaker than Earth's, but which has a magnetic moment 580 times that of Earth due to Saturn's larger size. Saturn's magnetic field strength is around one-twentieth of Jupiter's.</h4>
+                </div>
+            </div>
+            <div class="details-container" id="contentUranus" style="display: none;">
+                <img src="./Assets/uranus.jpeg" alt="">
+                <div class="details-content">
+                    <h3>Uranus</h3>
+                    <h4>Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) and father of Cronus (Saturn). It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both have bulk chemical compositions which differ from that of the larger gas giants Jupiter and Saturn. For this reason, scientists often classify Uranus and Neptune as "ice giants" to distinguish them from the other giant planets. As with gas giants, ice giants also lack a well defined "solid surface." Uranus's atmosphere is similar to Jupiter's and Saturn's in its primary composition of hydrogen and helium, but it contains more "ices" such as water, ammonia, and methane, along with traces of other hydrocarbons.</h4>
+                </div>
+            </div>
+            <div class="details-container" id="contentNeptune" style="display: none;">
+                <img src="./Assets/neptune.jpeg" alt="">
+                <div class="details-content">
+                    <h3>Neptune</h3>
+                    <h4>Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, and slightly more massive than its near-twin Uranus. Neptune is denser and physically smaller than Uranus because its greater mass causes more gravitational compression of its atmosphere. It is referred to as one of the solar system's two ice giant planets (the other one being its Uranus). Being composed primarily of gases and liquids, it has no well-defined "solid surface". The planet orbits the Sun once every 164.8 years at an average distance of 30.1 AU (4.5 billion km; 2.8 billion mi).</h4>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="facts" id="facts">
+        <div class="title" id="fact-title">
+            <h2>Fun Facts</h2>
+        </div>
+        <div class="fun-fact">
+            <div class="fact-content">
+                <h5>Not a planet anymore?</h5>
+                <h2>Dwarf Planet Pluto</h2>
+                <img class="fact1" src="Assets/pluto.jpeg" alt="">
+                <p>In 1930 Pluto was discovered as the ninth planet in our solar system. Later in 2006 it was demoted from the planet category to dwarf planet category, Pluto is no longer a planet since then. The reason was because there are a lot of asteroid with the same size as Pluto found near the kuiper belt where Pluto is.</p>
+            </div>
+            <div class="fact-content">
+                <h5>Time travel?</h5>
+                <h2>Einstein-Rosen Wormhole</h2>
+                <img class="fact2" src="Assets/wormhole.jpeg" alt="">
+                <p>Einstein-Rosen Bridge, commonly known as wormhole is actually just theories from a lot of researcher. The wormhole we saw in the movies is not actually possible and proved until today. A wormhole can theoritically connect two different points in spacetime. In other words if we can ride a wormhole we can travel faster than lightspeed.</p>
+            </div>
+            <div class="fact-content">
+                <h5>Jupiter's Title?</h5>
+                <h2>Jupiter</h2>
+                <img class="fact3" src="Assets/jupiter.jpeg" alt="">
+                <p>Jupiter hold the title of the biggest planet in our solar system. However, Jupiter also have another title that not many people know, which is the planets with most satellite object in our solar system. Jupiter is commonly known to have 4 moons (Io, Europa, Ganymede, and Callisto), but this planet actually has over 200 natural satellite orbiting it.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="foot-content">
+            <div>
+                <h3>Astronom</h3>
+            </div>
+            <div>
+                <h5>For more information about us please visit one of our social media accounts below</h5>
+                <h5> Thank you for visiting Astronom</h5>
+                <h4 id="contact">Contact us at</h4>
+            </div>
+            <div class="sc-media">
+                <a class="facebook" href="https://facebook.com" target="_blank"><h4>Facebook</h4></a>
+                <a class="instagram" href="https://instagram.com" target="_blank"><h4>Instagram</h4></a>
+                <a class="twitter" href="https://twitter.com" target="_blank"><h4>Twitter</h4></a>
+                <a class="youtube" href="https://youtube.com" target="_blank"><h4>YouTube</h4></a>
+            </div>
+            <div class="copyright">
+                &copy;2023 Astronom
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
